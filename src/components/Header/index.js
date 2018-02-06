@@ -18,7 +18,9 @@ class Header extends Component {
     return (
       <header className="header-layout" >
         <h1 className="header-title">
-          FakeHub
+          <a className="header-anchor" href="/">
+            FakeHub
+          </a>
         </h1>
         <form className="search-form" onSubmit={this.searchElement}>
           <input placeholder="Search users on FakeHub" ref={(input) => { this.searchValue = input }} className="search-input" type="text" />

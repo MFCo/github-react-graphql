@@ -37,3 +37,8 @@
   color: white;
   font-size: 30px;
 }
+
+.header-anchor {
+  text-decoration: none;
+  color: inherit;
+}
