@@ -1,3 +1,6 @@
+.profile__card-layout {
+  max-width: 230px;
+}
 .profile-img {
   background-color: black;
   border-radius: 6px;

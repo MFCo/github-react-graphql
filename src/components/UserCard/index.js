@@ -5,7 +5,7 @@ import DescriptionList from '../DescriptionList';
 import './style.css';
 
 const UserCard = () => (
-  <div>
+  <div className="profile__card-layout">
     <React.Fragment>
       <div className="profile-img" />
       <div className="profile-main-info">
