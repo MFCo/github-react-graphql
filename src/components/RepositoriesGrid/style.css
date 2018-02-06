@@ -1,0 +1,7 @@
+.grid-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 30px;
+  height: 350px;
+}

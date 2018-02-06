@@ -1,0 +1,31 @@
+.repository-card-layout {
+  width: 350px;
+  height: 80px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.repository-card--title {
+  color: #0366d6;
+  margin: 0;
+}
+
+.repository-card--text {
+  font-size: 12px;
+  color: #586069;
+}
+
+.repository-card--language-icon {
+  background-color: olive;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
