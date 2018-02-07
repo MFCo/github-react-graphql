@@ -4,6 +4,8 @@
 .profile-img {
   background-color: black;
   border-radius: 6px;
+  min-width: 230px;
+  min-height: 230px;
   width: 230px;
   height: 230px; 
 }

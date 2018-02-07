@@ -1,4 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+import { connect } from 'react-redux';
 
 import CompanyLogo from '../../logos/comp';
 import LocationLogo from '../../logos/location';
@@ -7,40 +10,49 @@ import WebsiteLogo from '../../logos/website';
 
 import './style.css';
 
-const DescriptionList = () =>
+const DescriptionList = ({ company, website, location, mail }) =>
   <ul className="description-list">
-    <li className="description-item">
+    {company && <li className="description-item">
       <span className="description-svg">
         <CompanyLogo />
       </span>
       <span className="description-text">
-        @CompanyName
+        {company}
       </span>
-    </li>
-    <li className="description-item">
+    </li>}
+    {location && <li className="description-item">
       <span className="description-svg">
         <LocationLogo />
       </span>
       <span className="description-text">
-        Somewhere, Germany
+        {location}
       </span>
-    </li>
-    <li className="description-item">
+    </li>}
+    {mail && <li className="description-item">
       <span className="description-svg">
         <MailLogo />
       </span>
       <span className="description-text">
-        username@gmail.com
+        {mail}
       </span>
-    </li>
-    <li className="description-item">
+    </li>}
+    {website && <li className="description-item">
       <span className="description-svg">
         <WebsiteLogo />
       </span>
       <span className="description-text">
-        www.username.com
+        {website}
       </span>
-    </li>
+    </li>}
   </ul>
 
-export default DescriptionList;
+DescriptionList.propTypes = {
+  company: PropTypes.string,
+  website: PropTypes.string,
+  location: PropTypes.string,
+  mail: PropTypes.string
+};
+
+const mapStateToProps = ({ user: { company, website, location, mail } }) => ({ company, website, location, mail })
+
+export default connect(mapStateToProps)(DescriptionList);
