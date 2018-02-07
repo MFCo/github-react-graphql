@@ -5,3 +5,15 @@
   padding-left: 30px;
   height: 350px;
 }
+
+.repositories-button {
+  background: none;
+  border: none;
+  color: #0366d6;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.repositories-button:focus {
+  outline: none;
+}

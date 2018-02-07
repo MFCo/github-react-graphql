@@ -34,6 +34,33 @@ export function initialQuery() {
   }`)
 };
 
+export function nextRepositoryPage(user, endPage) {
+  return (
+    `{
+      user(login:"${user}") {
+        repositories(first: 6, after: ${endPage}) {
+          pageInfo {
+            hasNextPage
+            endCursor
+            startCursor
+          }
+          edges {
+            node {
+              name
+              description
+              forkCount
+              primaryLanguage {
+                color
+                name
+              }
+              homepageUrl
+            }
+          }
+        }
+      }
+    }`)
+}
+
 export function searchQuery(user) {
   return (
     `{

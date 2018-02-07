@@ -11,7 +11,14 @@ export default handleActions({
     return {
       list: newList,
       hasNextPage: newHasNextPage,
-      endCursor: newEndCursor
+      endCursor: `"${newEndCursor}"`
+    }
+  },
+  ADD_REPOSITORIES: (state, { payload: { newList, newHasNextPage, newEndCursor } }) => {
+    return {
+      list: state.list.concat(newList),
+      hasNextPage: newHasNextPage,
+      endCursor: `"${newEndCursor}"`
     }
   }
 }, defaultState);
