@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './style.css';
+import { withRouter } from "react-router-dom";
+
 
 class Header extends Component {
 
@@ -11,7 +13,7 @@ class Header extends Component {
   }
   searchElement(event) {
     event.preventDefault();
-    console.log(this.searchValue.value);
+    this.props.history.push(`/${this.searchValue.value}`);
   }
 
   render() {
@@ -23,10 +25,10 @@ class Header extends Component {
           </a>
         </h1>
         <form className="search-form" onSubmit={this.searchElement}>
-          <input placeholder="Search users on FakeHub" ref={(input) => { this.searchValue = input }} className="search-input" type="text" />
+          <input placeholder="Search users on FakeHub by username" ref={(input) => { this.searchValue = input }} className="search-input" type="text" />
         </form>
       </header>
     );
   }
 }
-export default Header;
+export default withRouter(Header);
