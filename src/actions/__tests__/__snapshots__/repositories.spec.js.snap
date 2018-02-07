@@ -6,8 +6,8 @@ Array [
     "payload": Object {
       "newEndCursor": "Y3Vyc29yOnYyOpHOARWdng==",
       "newHasNextPage": true,
-      "newList": Object {
-        "0": Object {
+      "newList": Array [
+        Object {
           "description": "Pang pang revenge",
           "forkCount": 0,
           "homepageUrl": null,
@@ -17,7 +17,7 @@ Array [
             "name": "JavaScript",
           },
         },
-        "1": Object {
+        Object {
           "description": "Pangolier is balanced ",
           "forkCount": 0,
           "homepageUrl": null,
@@ -27,7 +27,7 @@ Array [
             "name": "JavaScript",
           },
         },
-        "2": Object {
+        Object {
           "description": "Yeah, i love dota2 ",
           "forkCount": 0,
           "homepageUrl": null,
@@ -37,7 +37,7 @@ Array [
             "name": "JavaScript",
           },
         },
-      },
+      ],
     },
     "type": "UPDATE_REPOSITORIES",
   },
@@ -50,8 +50,8 @@ Array [
     "payload": Object {
       "newEndCursor": "Y3Vyc29yOnYyOpHOARWdng==",
       "newHasNextPage": false,
-      "newList": Object {
-        "0": Object {
+      "newList": Array [
+        Object {
           "description": "We should play",
           "forkCount": 0,
           "homepageUrl": null,
@@ -61,7 +61,7 @@ Array [
             "name": "JavaScript",
           },
         },
-        "1": Object {
+        Object {
           "description": "Hahaha",
           "forkCount": 0,
           "homepageUrl": null,
@@ -71,7 +71,7 @@ Array [
             "name": "JavaScript",
           },
         },
-      },
+      ],
     },
     "type": "ADD_REPOSITORIES",
   },

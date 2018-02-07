@@ -12,8 +12,8 @@ it('should dispatch action to add repositories', () => {
   store.dispatch(act.updateRepositories(
     {
       newList:
-        {
-          0: {
+        [
+          {
             "name": "PangRevenge",
             "description": "Pang pang revenge",
             "forkCount": 0,
@@ -23,7 +23,7 @@ it('should dispatch action to add repositories', () => {
             },
             "homepageUrl": null
           },
-          1: {
+          {
             "name": "PangRevenge",
             "description": "Pangolier is balanced ",
             "forkCount": 0,
@@ -33,7 +33,7 @@ it('should dispatch action to add repositories', () => {
             },
             "homepageUrl": null
           },
-          2: {
+          {
             "name": "PangRevenge",
             "description": "Yeah, i love dota2 ",
             "forkCount": 0,
@@ -43,7 +43,7 @@ it('should dispatch action to add repositories', () => {
             },
             "homepageUrl": null
           },
-        },
+        ],
       newHasNextPage: true,
       newEndCursor: "Y3Vyc29yOnYyOpHOARWdng=="
     }));
@@ -55,8 +55,8 @@ it('should dispatch action to add repositories', () => {
 
   const initialState = {
     list:
-      {
-        0: {
+      [
+        {
           "name": "PangRevenge",
           "description": "Pang pang revenge",
           "forkCount": 0,
@@ -66,7 +66,7 @@ it('should dispatch action to add repositories', () => {
           },
           "homepageUrl": null
         },
-        1: {
+        {
           "name": "PangRevenge",
           "description": "Pangolier is balanced ",
           "forkCount": 0,
@@ -76,7 +76,7 @@ it('should dispatch action to add repositories', () => {
           },
           "homepageUrl": null
         },
-        2: {
+        {
           "name": "PangRevenge",
           "description": "Yeah, i love dota2 ",
           "forkCount": 0,
@@ -86,7 +86,7 @@ it('should dispatch action to add repositories', () => {
           },
           "homepageUrl": null
         }
-      },
+      ],
     hasNextPage: true,
     endCursor: "Y3Vyc29yOnYyOpHOARWdng=="
   };
@@ -96,8 +96,8 @@ it('should dispatch action to add repositories', () => {
   store.dispatch(act.addRepositories(
     {
       newList:
-        {
-          0: {
+        [
+          {
             "name": "PangRevenge",
             "description": "We should play",
             "forkCount": 0,
@@ -107,7 +107,7 @@ it('should dispatch action to add repositories', () => {
             },
             "homepageUrl": null
           },
-          1: {
+          {
             "name": "PangRevenge",
             "description": "Hahaha",
             "forkCount": 0,
@@ -117,7 +117,7 @@ it('should dispatch action to add repositories', () => {
             },
             "homepageUrl": null
           }
-        },
+        ],
       newHasNextPage: false,
       newEndCursor: "Y3Vyc29yOnYyOpHOARWdng=="
     }));

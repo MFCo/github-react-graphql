@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle ADD_REPOSITORIES 1`] = `
+Object {
+  "endCursor": "\\"Y3Vyc29yOnYyOpHOARWdng==\\"",
+  "hasNextPage": false,
+  "list": Array [
+    Object {
+      "description": "Pang pang revenge",
+      "forkCount": 0,
+      "homepageUrl": null,
+      "name": "PangRevenge",
+      "primaryLanguage": Object {
+        "color": "#f1e05a",
+        "name": "JavaScript",
+      },
+    },
+    Object {
+      "description": "Pangolier is balanced ",
+      "forkCount": 0,
+      "homepageUrl": null,
+      "name": "PangRevenge",
+      "primaryLanguage": Object {
+        "color": "#f1e05a",
+        "name": "JavaScript",
+      },
+    },
+    Object {
+      "description": "Yeah, i love dota2 ",
+      "forkCount": 0,
+      "homepageUrl": null,
+      "name": "PangRevenge",
+      "primaryLanguage": Object {
+        "color": "#f1e05a",
+        "name": "JavaScript",
+      },
+    },
+    Object {
+      "0": Object {
+        "description": "We should play",
+        "forkCount": 0,
+        "homepageUrl": null,
+        "name": "PangRevenge",
+        "primaryLanguage": Object {
+          "color": "#f1e05a",
+          "name": "JavaScript",
+        },
+      },
+      "1": Object {
+        "description": "Hahaha",
+        "forkCount": 0,
+        "homepageUrl": null,
+        "name": "PangRevenge",
+        "primaryLanguage": Object {
+          "color": "#f1e05a",
+          "name": "JavaScript",
+        },
+      },
+    },
+  ],
+}
+`;
+
+exports[`should handle UPDATE_REPOSITORIES 1`] = `
+Object {
+  "endCursor": "\\"Y3Vyc29yOnYyOpHOARWdng==\\"",
+  "hasNextPage": false,
+  "list": Array [
+    Object {
+      "description": "We should play",
+      "forkCount": 0,
+      "homepageUrl": null,
+      "name": "PangRevenge",
+      "primaryLanguage": Object {
+        "color": "#f1e05a",
+        "name": "JavaScript",
+      },
+    },
+    Object {
+      "description": "Hahaha",
+      "forkCount": 0,
+      "homepageUrl": null,
+      "name": "PangRevenge",
+      "primaryLanguage": Object {
+        "color": "#f1e05a",
+        "name": "JavaScript",
+      },
+    },
+  ],
+}
+`;
+
+exports[`should return the initial state 1`] = `
+Object {
+  "endCursor": null,
+  "hasNextPage": false,
+  "list": Array [],
+}
+`;

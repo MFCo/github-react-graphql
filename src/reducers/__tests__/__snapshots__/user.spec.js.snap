@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle UPDATE_LIST 1`] = `
+Object {
+  "avatar": "image.jpg",
+  "bio": "hi!",
+  "company": "company",
+  "location": "London, Spain",
+  "mail": "gmail@jhondoe.com",
+  "name": "Jhon Doe",
+  "user": "JDoe",
+  "website": "com.ar.jhon",
+}
+`;
+
+exports[`should return the initial state 1`] = `
+Object {
+  "avatar": "",
+  "bio": "no bio provided",
+  "company": "no company provided",
+  "location": "no location provided",
+  "mail": "no e-mail provided",
+  "name": "no name provided",
+  "user": "no user provided",
+  "website": "no website provided",
+}
+`;
