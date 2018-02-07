@@ -16,7 +16,7 @@ const UserCard = ({ name, user, bio, avatar }) => (
         <h2 className="profile-user"> {user} </h2>
       </div>
     </React.Fragment>
-    
+
     {bio && <p className="profile-bio">
       {bio}
     </p>}
@@ -32,7 +32,7 @@ UserCard.propTypes = {
   bio: PropTypes.string
 };
 
-const mapStateToProps = ({ user: { name, user, bio, avatar } }) => ({ name, user, bio, avatar })
+const mapStateToProps = ({ user: { name, user, bio, avatar } }) => ({ name, user, bio, avatar });
 
 
 export default connect(mapStateToProps)(UserCard);

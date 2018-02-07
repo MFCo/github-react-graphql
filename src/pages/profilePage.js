@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { connect } from 'react-redux';
 import Profile from '../components/Profile';
@@ -8,7 +9,7 @@ import actions from '../actions';
 import { initialQuery, searchQuery } from '../utils/queries';
 import client from '../utils/graphQLClient';
 
-const { updateUser } = actions;
+const { updateUser, updateRepositories } = actions;
 
 function fetchUser(props) {
   props.location.pathname === '/' ?
@@ -25,6 +26,11 @@ function fetchUser(props) {
           newMail: data.viewer.email,
           newWebsite: data.viewer.websiteUrl
         });
+        props.updateRepositories({
+          newList: data.viewer.repositories.edges.map((element) => element.node),
+          newHasNextPage: data.viewer.repositories.pageInfo.hasNextPage,
+          newEndCursor: data.viewer.repositories.pageInfo.endCursor
+        });
       })
     :
     client.request(searchQuery(props.location.pathname.substring(1)))
@@ -40,10 +46,20 @@ function fetchUser(props) {
           newMail: data.user.email,
           newWebsite: data.user.websiteUrl
         });
+        props.updateRepositories({
+          newList: data.user.repositories.edges.map((element) => element.node),
+          newHasNextPage: data.user.repositories.pageInfo.hasNextPage,
+          newEndCursor: data.user.repositories.pageInfo.endCursor
+        });
       });
 }
 
 class ProfilePage extends React.Component {
+
+  static propTypes = {
+    updateUser: PropTypes.any,
+    updateRepositories: PropTypes.any
+  }
 
   componentWillReceiveProps(newProps) {
     fetchUser(newProps);
@@ -58,4 +74,4 @@ class ProfilePage extends React.Component {
   }
 }
 
-export default connect(undefined, { updateUser })(ProfilePage);
+export default connect(undefined, { updateUser, updateRepositories })(ProfilePage);
