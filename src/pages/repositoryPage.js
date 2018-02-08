@@ -17,10 +17,8 @@ function fetchRepository(props) {
   client.request(repositoryFirstLayer(user, repository))
     .then(
       data => {
-        console.log(data);
         props.updateDirectory({
           newList: data.repository.object.entries,
-          newfatherId: null,
           newId: 'master'
         });
         props.updateRepository({

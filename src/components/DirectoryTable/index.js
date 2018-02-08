@@ -10,12 +10,9 @@ import DirectoryItem from '../DirectoryItem';
 import FolderIcon from '../../icons/folder';
 import FileIcon from '../../icons/file';
 
-const DirectoryTable = ({ list, id }) => (
+const DirectoryTable = ({ list, id, fatherId }) => (
   <table className="table-layout">
     <tbody>
-      {
-        id !== 'master' && <DirectoryItem Icon={FolderIcon} name=".." />
-      }
       {
         list.map((element) =>
           <DirectoryItem

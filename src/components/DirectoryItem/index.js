@@ -15,21 +15,20 @@ import client from '../../utils/graphQLClient';
 const { updateDirectory } = actions;
 
 
-function handleclick(id, fatherId, updateDirectory, repoName, repoOwner) {
+function handleclick(id, updateDirectory, repoName, repoOwner) {
   client.request(repositoryNextLayer(repoOwner, repoName, id))
     .then(
       data => {
         updateDirectory({
           newList: data.repository.object.entries,
-          newfatherId: fatherId,
           newId: id
         });
       }
     );
 }
 
-const DirectoryItem = ({ Icon, name, clickeable, id, fatherId, updateDirectory, repoName, repoOwner }) => (
-  <tr onClick={() => handleclick(id, fatherId, updateDirectory, repoName, repoOwner)}
+const DirectoryItem = ({ Icon, name, clickeable, id, updateDirectory, repoName, repoOwner }) => (
+  <tr onClick={clickeable ? () => handleclick(id, updateDirectory, repoName, repoOwner) : null}
     className={cn('item-layout', { 'item-layout__clickeable': clickeable })}>
     <td className="item--icon">
       <Icon />
@@ -44,7 +43,9 @@ DirectoryItem.propTypes = {
   name: PropTypes.string.isRequired,
   clickeable: PropTypes.bool,
   id: PropTypes.string,
-  fatherId: PropTypes.string
+  updateDirectory: PropTypes.func,
+  repoName: PropTypes.string,
+  repoOwner: PropTypes.string
 }
 
 const mapStateToProps = ({ repository: { name, owner } }) => ({ repoName: name, repoOwner: owner })
