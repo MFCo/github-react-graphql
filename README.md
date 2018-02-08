@@ -8,6 +8,10 @@ This example show your profile (as you can see in the next image) at homepage, a
 
 ![Homepage](https://i.imgur.com/MxpF4tU.png)
 
+You can also navigate through your repositories as you can see in the next image, every time you go into one directory only that information is fetched!
+
+![Navigating](https://i.imgur.com/18Kyozs.png)
+
 ## How to run it
 
 It's pretty simple to run, you just need to create your own Personal Access Token (without it you can't hit GitHub API V4, that's the one we want to hit because the older ones are API REST). To create it just got to `Settings > Developer Settings > Personal Access Tokens` and generate a new one, be careful and save that token because once you go out that page you can't recover it, you'll need to create a new one.
