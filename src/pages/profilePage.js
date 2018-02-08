@@ -16,21 +16,7 @@ function fetchUser(props) {
     client.request(initialQuery())
       .then(
       data => {
-        props.updateUser({
-          newAvatar: data.viewer.avatarUrl,
-          newName: data.viewer.name,
-          newUser: data.viewer.login,
-          newBio: data.viewer.bio,
-          newCompany: data.viewer.company,
-          newLocation: data.viewer.location,
-          newMail: data.viewer.email,
-          newWebsite: data.viewer.websiteUrl
-        });
-        props.updateRepositories({
-          newList: data.viewer.repositories.edges.map((element) => element.node),
-          newHasNextPage: data.viewer.repositories.pageInfo.hasNextPage,
-          newEndCursor: data.viewer.repositories.pageInfo.endCursor
-        });
+        props.history.push(`/${data.viewer.login}`);
       })
     :
     client.request(searchQuery(props.location.pathname.substring(1)))
@@ -70,7 +56,7 @@ class ProfilePage extends React.Component {
   }
 
   render() {
-    return <Profile />;
+    return <Profile />
   }
 }
 

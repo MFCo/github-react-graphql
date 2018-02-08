@@ -1,0 +1,6 @@
+.table-layout {
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 6px;
+}

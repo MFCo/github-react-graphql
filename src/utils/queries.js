@@ -2,36 +2,29 @@ export function initialQuery() {
   return (
     `{
     viewer {
-      name,
-      login,
-      avatarUrl,
-      name,
-      bio,
-      company,
-      email,
-      location,
-      websiteUrl,
-      repositories(first: 6) {
-        pageInfo {
-          hasNextPage
-          endCursor
-          startCursor
-        }
-        edges {
-          node {
-            name
-            description
-            forkCount
-            primaryLanguage {
-              color
-              name
-            }
-            homepageUrl
-          }
-        }
-      }
+      login
     }
   }`)
+};
+
+export function repositoryFirstLayer(user, repo) {
+  return (
+    `{
+      repository(owner:"${user}" name: "${repo}") {
+      name,
+      description,
+      homepageUrl,
+      object(expression: "master:") {
+        ... on Tree{
+          entries{
+            name
+            type
+            oid
+          }
+        }
+        }
+      }
+    }`)
 };
 
 export function nextRepositoryPage(user, endPage) {

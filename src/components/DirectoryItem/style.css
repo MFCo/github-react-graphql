@@ -1,0 +1,16 @@
+.item-layout {
+  display: table-row;
+  border: 1px solid rgb(181, 181, 181);
+  border-collapse: collapse;
+  height: 35px;
+}
+
+.item-layout__clickeable:hover {
+  background-color: rgb(233, 235, 235);
+  cursor: pointer;
+}
+
+.item--icon {
+  padding-left: 15px;
+  width: 30px;
+}

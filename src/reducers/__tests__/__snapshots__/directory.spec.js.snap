@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle UPDATE_DIRECTORY 1`] = `
+Object {
+  "fatherId": null,
+  "id": null,
+  "list": Array [],
+}
+`;
+
+exports[`should return the initial state 1`] = `
+Object {
+  "fatherId": null,
+  "id": null,
+  "list": Array [],
+}
+`;

@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import { connect } from 'react-redux';
 
-import CompanyLogo from '../../logos/comp';
-import LocationLogo from '../../logos/location';
-import MailLogo from '../../logos/mail';
-import WebsiteLogo from '../../logos/website';
+import CompanyLogo from '../../icons/comp';
+import LocationLogo from '../../icons/location';
+import MailLogo from '../../icons/mail';
+import WebsiteLogo from '../../icons/website';
 
 import './style.css';
 
