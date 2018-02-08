@@ -1,13 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should dispatch action to update user 1`] = `
+exports[`should dispatch action to change starred state 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "newStarred": false,
+    },
+    "type": "STAR_CHANGE",
+  },
+]
+`;
+
+exports[`should dispatch action to update repository 1`] = `
 Array [
   Object {
     "payload": Object {
       "newDescription": "hi!",
       "newHomepage": "com.ar.jhon",
+      "newId": "asdaksdlksd==",
       "newName": "Jhon-Doe-Repo",
       "newOwner": "JDoe",
+      "newStarred": false,
     },
     "type": "UPDATE_REPOSITORY",
   },

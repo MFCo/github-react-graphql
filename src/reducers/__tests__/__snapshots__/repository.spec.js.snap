@@ -1,11 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should handle UPDATE_USER 1`] = `
+exports[`should handle STAR_CHANGE 1`] = `
+Object {
+  "description": "",
+  "homepage": "",
+  "id": "",
+  "name": "",
+  "owner": "",
+  "starred": false,
+}
+`;
+
+exports[`should handle UPDATE_REPOSITORY 1`] = `
 Object {
   "description": "hi!",
   "homepage": "com.ar.jhon",
+  "id": "asdaksdlksd==",
   "name": "Jhon-Doe-Repo",
   "owner": "JDoe",
+  "starred": false,
 }
 `;
 
@@ -13,7 +26,9 @@ exports[`should return the initial state 1`] = `
 Object {
   "description": "",
   "homepage": "",
+  "id": "",
   "name": "",
   "owner": "",
+  "starred": false,
 }
 `;
