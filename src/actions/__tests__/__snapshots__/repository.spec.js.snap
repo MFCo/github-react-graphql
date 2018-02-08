@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should dispatch action to update user 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "newDescription": "hi!",
+      "newHomepage": "com.ar.jhon",
+      "newName": "Jhon-Doe-Repo",
+      "newOwner": "JDoe",
+    },
+    "type": "UPDATE_REPOSITORY",
+  },
+]
+`;

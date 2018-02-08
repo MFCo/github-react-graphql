@@ -6,7 +6,7 @@ it('should return the initial state', () => {
 })
 
 it('should handle UPDATE_DIRECTORY', () => {
-  expect(directory(undefined, actions.updateUser({
+  expect(directory(undefined, actions.updateDirectory({
     newList:
       [
         {

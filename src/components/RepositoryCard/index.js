@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import './style.css';
 
-const RepositoryCard = ({ name, description, color, language }) => (
+const RepositoryCard = ({ link, name, description, color, language }) => (
   <div className="repository-card-layout">
-    <h3 className="repository-card--title"> {name} </h3>
+    <h3 className="repository-card--title"> <a href={link}> {name} </a> </h3>
     <p className="repository-card--text"> {description} </p>
     <p className="repository-card--text">
       <span className="repository-card--language-icon" style={{ backgroundColor: color }} />
@@ -15,6 +15,7 @@ const RepositoryCard = ({ name, description, color, language }) => (
 );
 
 RepositoryCard.propTypes = {
+  link: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string,
   color: PropTypes.string,

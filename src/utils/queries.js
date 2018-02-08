@@ -11,7 +11,6 @@ export function repositoryFirstLayer(user, repo) {
   return (
     `{
       repository(owner:"${user}" name: "${repo}") {
-      name,
       description,
       homepageUrl,
       object(expression: "master:") {
@@ -39,6 +38,9 @@ export function nextRepositoryPage(user, endPage) {
           }
           edges {
             node {
+              owner {
+                login
+              }
               name
               description
               forkCount
@@ -75,6 +77,9 @@ export function searchQuery(user) {
           }
           edges {
             node {
+              owner {
+                login
+              }
               name
               description
               forkCount
@@ -82,7 +87,6 @@ export function searchQuery(user) {
                 color
                 name
               }
-              homepageUrl
             }
           }
         }

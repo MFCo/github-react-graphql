@@ -9,7 +9,7 @@ it('should dispatch action to update directory', () => {
   const initialState = {};
   const store = mockStore(initialState);
 
-  store.dispatch(act.updateUser({
+  store.dispatch(act.updateDirectory({
     newList:
       [
         {

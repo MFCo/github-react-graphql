@@ -17,13 +17,13 @@ const { addRepositories } = actions;
 function handleClick(addRepositories, user, endCursor) {
   client.request(nextRepositoryPage(user, endCursor))
     .then(
-    data => {
-      addRepositories({
-        newList: data.user.repositories.edges.map((element) => element.node),
-        newHasNextPage: data.user.repositories.pageInfo.hasNextPage,
-        newEndCursor: data.user.repositories.pageInfo.endCursor
-      });
-    }
+      data => {
+        addRepositories({
+          newList: data.user.repositories.edges.map((element) => element.node),
+          newHasNextPage: data.user.repositories.pageInfo.hasNextPage,
+          newEndCursor: data.user.repositories.pageInfo.endCursor
+        });
+      }
     )
 }
 
@@ -32,6 +32,7 @@ const RepositoriesGrid = ({ addRepositories, list, hasNextPage, endCursor, user 
     {
       list.map((element) =>
         <RepositoryCard
+          link={`/${element.owner.login}/${element.name}`}
           name={element.name}
           description={element.description}
           color={element.primaryLanguage && element.primaryLanguage.color}

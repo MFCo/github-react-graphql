@@ -2,9 +2,25 @@
 
 exports[`should handle UPDATE_DIRECTORY 1`] = `
 Object {
-  "fatherId": null,
-  "id": null,
-  "list": Array [],
+  "fatherId": "\\"d42ea8be8b19750c64dc2a305cbd198739e9adbe\\"",
+  "id": "\\"c8f50f7cd317669d25aedba7415f8a1cbaadbab0\\"",
+  "list": Array [
+    Object {
+      "name": ".eslintrc.js",
+      "oid": "29e7593c8ba8c3aedfcf2f78750e43ec428e367f",
+      "type": "blob",
+    },
+    Object {
+      "name": ".dockerignore",
+      "oid": "c8f50f7cd317669d25aedba7415f8a1cbaadbab0",
+      "type": "blob",
+    },
+    Object {
+      "name": ".babelrc",
+      "oid": "d42ea8be8b19750c64dc2a305cbd198739e9adbe",
+      "type": "blob",
+    },
+  ],
 }
 `;
 

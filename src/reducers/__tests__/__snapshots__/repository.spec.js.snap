@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle UPDATE_USER 1`] = `
+Object {
+  "description": "hi!",
+  "homepage": "com.ar.jhon",
+  "name": "Jhon-Doe-Repo",
+  "owner": "JDoe",
+}
+`;
+
+exports[`should return the initial state 1`] = `
+Object {
+  "description": "",
+  "homepage": "",
+  "name": "",
+  "owner": "",
+}
+`;
