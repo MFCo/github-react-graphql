@@ -8,9 +8,9 @@ This example show your profile (as you can see in the next image) at homepage, a
 
 ![Homepage](https://i.imgur.com/MxpF4tU.png)
 
-You can also navigate through your repositories as you can see in the next image, every time you go into one directory only that information is fetched!
+You can also navigate through your repositories as you can see in the next image, every time you go into one directory only that information is fetched! There is also an extra functionality...you are able to star/unstar repositories from the app!
 
-![Navigating](https://i.imgur.com/18Kyozs.png)
+![Navigating](https://i.imgur.com/VW2qMhH.png)
 
 ## How to run it
 
