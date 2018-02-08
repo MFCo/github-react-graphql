@@ -13,6 +13,8 @@ export function repositoryFirstLayer(user, repo) {
       repository(owner:"${user}" name: "${repo}") {
       description,
       homepageUrl,
+      viewerHasStarred,
+      id,
       object(expression: "master:") {
         ... on Tree{
           entries{
@@ -109,4 +111,28 @@ export function searchQuery(user) {
         }
       }
     }`)
+}
+
+export function addStar(repo) {
+  return (
+    `
+  mutation{
+    addStar(input:{starrableId:"${repo}"}){
+      clientMutationId
+    } 
+    }
+  `
+  )
+}
+
+export function removeStar(repo) {
+  return (
+    `
+  mutation{
+    removeStar(input:{starrableId:"${repo}"}){
+      clientMutationId
+    } 
+    }
+  `
+  )
 }

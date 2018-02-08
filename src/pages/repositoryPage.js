@@ -25,7 +25,9 @@ function fetchRepository(props) {
           newName: repository,
           newOwner: user,
           newDescription: data.repository.description,
-          newHomepage: data.repository.homepageUrl
+          newHomepage: data.repository.homepageUrl,
+          newId: data.repository.id,
+          newStarred: data.repository.viewerHasStarred
         })
       }
     )
