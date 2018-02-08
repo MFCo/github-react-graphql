@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 
 const Repository = ({ name, owner, description, homepage }) => (
   <React.Fragment>
-    <h1> <a href={`/${owner}`}> {owner} </a> / {name} </h1>
+    <h1> <a href={`/${owner}`}> {owner} </a> / <a href={`/${owner}/${name}`}>{name} </a></h1>
     <h3> {description} </h3>
     <p> <a href={homepage}> {homepage} </a> </p>
     <DirectoryTable />
