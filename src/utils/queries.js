@@ -26,6 +26,23 @@ export function repositoryFirstLayer(user, repo) {
     }`)
 };
 
+export function repositoryNextLayer(user, repo, id) {
+  return (
+    `{
+      repository(owner:"${user}" name: "${repo}") {
+      object(oid: "${id}") {
+        ... on Tree{
+          entries{
+            name
+            type
+            oid
+          }
+        }
+      }
+      }
+    }`);
+};
+
 export function nextRepositoryPage(user, endPage) {
   return (
     `{

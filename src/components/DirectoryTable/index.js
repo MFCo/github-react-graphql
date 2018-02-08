@@ -10,15 +10,20 @@ import DirectoryItem from '../DirectoryItem';
 import FolderIcon from '../../icons/folder';
 import FileIcon from '../../icons/file';
 
-const DirectoryTable = ({ list, fatherId, id }) => (
+const DirectoryTable = ({ list, id }) => (
   <table className="table-layout">
     <tbody>
+      {
+        id !== 'master' && <DirectoryItem Icon={FolderIcon} name=".." />
+      }
       {
         list.map((element) =>
           <DirectoryItem
             Icon={element.type === 'tree' ? FolderIcon : FileIcon}
             name={element.name}
             clickeable={element.type === 'tree'}
+            id={element.oid}
+            fatherId={id}
             key={element.name} />
         )
       }
@@ -28,10 +33,9 @@ const DirectoryTable = ({ list, fatherId, id }) => (
 
 DirectoryTable.propTypes = {
   list: PropTypes.array,
-  fatherId: PropTypes.string,
   id: PropTypes.string
 }
 
-const mapStateToProps = ({ directory: { list, fatherId, id } }) => ({ list, fatherId, id })
+const mapStateToProps = ({ directory: { list, id } }) => ({ list, id })
 
 export default connect(mapStateToProps)(DirectoryTable);
