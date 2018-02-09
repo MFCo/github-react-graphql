@@ -12,6 +12,8 @@ You can also navigate through your repositories as you can see in the next image
 
 ![Navigating](https://i.imgur.com/MM0bRR6.png)
 
+I know there are some issues on navigation for example, everytime you go into one directory when you go back another request is performed, we could save the last state and then just go back to this last state, but I think if we are not in a data restricted environment (for example an application to be used with 3G connection) doing that extra request is a better choice.
+
 ## How to run it
 
 It's pretty simple to run, you just need to create your own Personal Access Token (without it you can't hit GitHub API V4, that's the one we want to hit because the older ones are API REST). To create it just got to `Settings > Developer Settings > Personal Access Tokens` and generate a new one, be careful and save that token because once you go out that page you can't recover it, you'll need to create a new one.
