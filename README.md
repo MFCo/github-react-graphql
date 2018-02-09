@@ -4,9 +4,9 @@ This project is a PoC, the goal is to simulate GitHub behaviour with a ReactJS f
 
 ## Functionality
 
-This example show your profile (as you can see in the next image) at homepage, and it also let you to looking for another users profile by their username. In the profile you can see standard information, and a grid with all the user repo, they are shown paginated by 6 with a `Load more..` option.
+This example show your profile (as you can see in the next image) at homepage, and it also let you to looking for another users profile by their username. In the profile you can see standard information, and a grid with all the user repo, they are shown paginated by 6 with a `Load more..` option. In this page you can also see wich repositories are watched/starred by the user logged.
 
-![Homepage](https://i.imgur.com/MxpF4tU.png)
+![Homepage](https://i.imgur.com/YbiamBZ.png)
 
 You can also navigate through your repositories as you can see in the next image, every time you go into one directory only that information is fetched! There is also an extra functionality...you are able to star/unstar repositories from the app! And if that's not enough you can also watch/unwatch repositories.
 

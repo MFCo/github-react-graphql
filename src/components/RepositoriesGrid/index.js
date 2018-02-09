@@ -37,6 +37,8 @@ const RepositoriesGrid = ({ addRepositories, list, hasNextPage, endCursor, user 
           description={element.description}
           color={element.primaryLanguage && element.primaryLanguage.color}
           language={element.primaryLanguage && element.primaryLanguage.name}
+          star={element.viewerHasStarred}
+          watch={element.viewerSubscription === 'SUBSCRIBED'}
           key={element.name} />
       )
     }

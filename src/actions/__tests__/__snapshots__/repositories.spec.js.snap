@@ -9,33 +9,36 @@ Array [
       "newList": Array [
         Object {
           "description": "Pang pang revenge",
-          "forkCount": 0,
           "homepageUrl": null,
           "name": "PangRevenge",
           "primaryLanguage": Object {
             "color": "#f1e05a",
             "name": "JavaScript",
           },
+          "viewerHasStarred": true,
+          "viewerSubscription": "UNSUBSCRIBED",
         },
         Object {
           "description": "Pangolier is balanced ",
-          "forkCount": 0,
           "homepageUrl": null,
           "name": "PangRevenge",
           "primaryLanguage": Object {
             "color": "#f1e05a",
             "name": "JavaScript",
           },
+          "viewerHasStarred": false,
+          "viewerSubscription": "SUBSCRIBED",
         },
         Object {
           "description": "Yeah, i love dota2 ",
-          "forkCount": 0,
           "homepageUrl": null,
           "name": "PangRevenge",
           "primaryLanguage": Object {
             "color": "#f1e05a",
             "name": "JavaScript",
           },
+          "viewerHasStarred": true,
+          "viewerSubscription": "SUBSCRIBED",
         },
       ],
     },
@@ -53,23 +56,25 @@ Array [
       "newList": Array [
         Object {
           "description": "We should play",
-          "forkCount": 0,
           "homepageUrl": null,
           "name": "PangRevenge",
           "primaryLanguage": Object {
             "color": "#f1e05a",
             "name": "JavaScript",
           },
+          "viewerHasStarred": true,
+          "viewerSubscription": "UNSUBSCRIBED",
         },
         Object {
           "description": "Hahaha",
-          "forkCount": 0,
           "homepageUrl": null,
           "name": "PangRevenge",
           "primaryLanguage": Object {
             "color": "#f1e05a",
             "name": "JavaScript",
           },
+          "viewerHasStarred": false,
+          "viewerSubscription": "UNSUBSCRIBED",
         },
       ],
     },

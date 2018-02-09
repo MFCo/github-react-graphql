@@ -16,7 +16,8 @@ it('should dispatch action to add repositories', () => {
           {
             "name": "PangRevenge",
             "description": "Pang pang revenge",
-            "forkCount": 0,
+            "viewerHasStarred": true,
+            viewerSubscription: "UNSUBSCRIBED",
             "primaryLanguage": {
               "color": "#f1e05a",
               "name": "JavaScript"
@@ -26,7 +27,8 @@ it('should dispatch action to add repositories', () => {
           {
             "name": "PangRevenge",
             "description": "Pangolier is balanced ",
-            "forkCount": 0,
+            "viewerHasStarred": false,
+            viewerSubscription: "SUBSCRIBED",
             "primaryLanguage": {
               "color": "#f1e05a",
               "name": "JavaScript"
@@ -36,7 +38,8 @@ it('should dispatch action to add repositories', () => {
           {
             "name": "PangRevenge",
             "description": "Yeah, i love dota2 ",
-            "forkCount": 0,
+            "viewerHasStarred": true,
+            viewerSubscription: "SUBSCRIBED",
             "primaryLanguage": {
               "color": "#f1e05a",
               "name": "JavaScript"
@@ -59,7 +62,8 @@ it('should dispatch action to add repositories', () => {
         {
           "name": "PangRevenge",
           "description": "Pang pang revenge",
-          "forkCount": 0,
+          "viewerHasStarred": false,
+          viewerSubscription: "UNSUBSCRIBED",
           "primaryLanguage": {
             "color": "#f1e05a",
             "name": "JavaScript"
@@ -69,7 +73,8 @@ it('should dispatch action to add repositories', () => {
         {
           "name": "PangRevenge",
           "description": "Pangolier is balanced ",
-          "forkCount": 0,
+          "viewerHasStarred": false,
+          viewerSubscription: "UNSUBSCRIBED",
           "primaryLanguage": {
             "color": "#f1e05a",
             "name": "JavaScript"
@@ -79,7 +84,8 @@ it('should dispatch action to add repositories', () => {
         {
           "name": "PangRevenge",
           "description": "Yeah, i love dota2 ",
-          "forkCount": 0,
+          "viewerHasStarred": false,
+          viewerSubscription: "UNSUBSCRIBED",
           "primaryLanguage": {
             "color": "#f1e05a",
             "name": "JavaScript"
@@ -100,7 +106,8 @@ it('should dispatch action to add repositories', () => {
           {
             "name": "PangRevenge",
             "description": "We should play",
-            "forkCount": 0,
+            "viewerHasStarred": true,
+            viewerSubscription: "UNSUBSCRIBED",
             "primaryLanguage": {
               "color": "#f1e05a",
               "name": "JavaScript"
@@ -110,7 +117,8 @@ it('should dispatch action to add repositories', () => {
           {
             "name": "PangRevenge",
             "description": "Hahaha",
-            "forkCount": 0,
+            "viewerHasStarred": false,
+            viewerSubscription: "UNSUBSCRIBED",
             "primaryLanguage": {
               "color": "#f1e05a",
               "name": "JavaScript"

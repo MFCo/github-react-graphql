@@ -61,9 +61,10 @@ export function nextRepositoryPage(user, endPage) {
               owner {
                 login
               }
-              name
-              description
-              forkCount
+              name,
+              description,
+              viewerHasStarred,
+              viewerSubscription,
               primaryLanguage {
                 color
                 name
@@ -102,7 +103,8 @@ export function searchQuery(user) {
               }
               name
               description
-              forkCount
+              viewerHasStarred,
+              viewerSubscription,
               primaryLanguage {
                 color
                 name

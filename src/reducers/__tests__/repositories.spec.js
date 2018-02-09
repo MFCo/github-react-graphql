@@ -14,7 +14,8 @@ it('should handle UPDATE_REPOSITORIES', () => {
             {
               "name": "PangRevenge",
               "description": "We should play",
-              "forkCount": 0,
+              "viewerHasStarred": false,
+              viewerSubscription: "UNSUBSCRIBED",
               "primaryLanguage": {
                 "color": "#f1e05a",
                 "name": "JavaScript"
@@ -24,7 +25,8 @@ it('should handle UPDATE_REPOSITORIES', () => {
             {
               "name": "PangRevenge",
               "description": "Hahaha",
-              "forkCount": 0,
+              "viewerHasStarred": false,
+              viewerSubscription: "UNSUBSCRIBED",
               "primaryLanguage": {
                 "color": "#f1e05a",
                 "name": "JavaScript"
@@ -45,7 +47,8 @@ it('should handle ADD_REPOSITORIES', () => {
           {
             "name": "PangRevenge",
             "description": "Pang pang revenge",
-            "forkCount": 0,
+            "viewerHasStarred": false,
+            viewerSubscription: "UNSUBSCRIBED",
             "primaryLanguage": {
               "color": "#f1e05a",
               "name": "JavaScript"
@@ -55,7 +58,8 @@ it('should handle ADD_REPOSITORIES', () => {
           {
             "name": "PangRevenge",
             "description": "Pangolier is balanced ",
-            "forkCount": 0,
+            "viewerHasStarred": false,
+            viewerSubscription: "SUBSCRIBED",
             "primaryLanguage": {
               "color": "#f1e05a",
               "name": "JavaScript"
@@ -83,7 +87,8 @@ it('should handle ADD_REPOSITORIES', () => {
             0: {
               "name": "PangRevenge",
               "description": "We should play",
-              "forkCount": 0,
+              "viewerHasStarred": false,
+              viewerSubscription: "SUBSCRIBED",
               "primaryLanguage": {
                 "color": "#f1e05a",
                 "name": "JavaScript"
