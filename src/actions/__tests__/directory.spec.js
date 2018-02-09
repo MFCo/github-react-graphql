@@ -34,3 +34,27 @@ it('should dispatch action to update directory', () => {
   const actions = store.getActions();
   expect(actions).toMatchSnapshot();
 });
+
+it('should dispatch action to forward on stack trace', () => {
+
+  const initialState = {};
+  const store = mockStore(initialState);
+
+  store.dispatch(act.forwardStack({
+    newStack: ['c8f50f7cd317669d25aedba7415f8a1cbaadbab0']
+  }));
+
+  const actions = store.getActions();
+  expect(actions).toMatchSnapshot();
+});
+
+it('should dispatch action to backward on stack trace', () => {
+
+  const initialState = {};
+  const store = mockStore(initialState);
+
+  store.dispatch(act.backwardStack());
+
+  const actions = store.getActions();
+  expect(actions).toMatchSnapshot();
+});

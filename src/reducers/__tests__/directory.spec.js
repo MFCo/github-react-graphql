@@ -28,3 +28,13 @@ it('should handle UPDATE_DIRECTORY', () => {
     newId: 'c8f50f7cd317669d25aedba7415f8a1cbaadbab0'
   }))).toMatchSnapshot()
 })
+
+it('should handle FORWARD_STACK', () => {
+  expect(directory(undefined, actions.forwardStack({
+    newStack: ['c8f50f7cd317669d25aedba7415f8a1cbaadbab0']
+  }))).toMatchSnapshot()
+})
+
+it('should handle BACKWARD_STACK', () => {
+  expect(directory(undefined, actions.backwardStack())).toMatchSnapshot()
+})

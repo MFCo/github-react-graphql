@@ -1,5 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should dispatch action to backward on stack trace 1`] = `
+Array [
+  Object {
+    "type": "BACKWARD_STACK",
+  },
+]
+`;
+
+exports[`should dispatch action to forward on stack trace 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "newStack": Array [
+        "c8f50f7cd317669d25aedba7415f8a1cbaadbab0",
+      ],
+    },
+    "type": "FORWARD_STACK",
+  },
+]
+`;
+
 exports[`should dispatch action to update directory 1`] = `
 Array [
   Object {

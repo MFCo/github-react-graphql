@@ -10,7 +10,7 @@ import Repository from '../components/Repository';
 import { repositoryFirstLayer } from '../utils/queries';
 import client from '../utils/graphQLClient';
 
-const { updateDirectory, updateRepository } = actions;
+const { updateDirectory, updateRepository, forwardStack } = actions;
 
 function fetchRepository(props) {
   const [, user, repository] = props.location.pathname.split('/');
@@ -54,4 +54,4 @@ class ProfilePage extends React.Component {
   }
 }
 
-export default connect(undefined, { updateDirectory, updateRepository })(ProfilePage);
+export default connect(undefined, { updateDirectory, updateRepository, forwardStack })(ProfilePage);

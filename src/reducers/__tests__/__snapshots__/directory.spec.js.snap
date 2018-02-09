@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should handle BACKWARD_STACK 1`] = `
+Object {
+  "id": null,
+  "list": Array [],
+  "stackTrace": Array [],
+}
+`;
+
+exports[`should handle FORWARD_STACK 1`] = `
+Object {
+  "id": null,
+  "list": Array [],
+  "stackTrace": Array [
+    "c8f50f7cd317669d25aedba7415f8a1cbaadbab0",
+  ],
+}
+`;
+
 exports[`should handle UPDATE_DIRECTORY 1`] = `
 Object {
   "id": "c8f50f7cd317669d25aedba7415f8a1cbaadbab0",
@@ -20,6 +38,7 @@ Object {
       "type": "blob",
     },
   ],
+  "stackTrace": Array [],
 }
 `;
 
@@ -27,5 +46,6 @@ exports[`should return the initial state 1`] = `
 Object {
   "id": null,
   "list": Array [],
+  "stackTrace": Array [],
 }
 `;
