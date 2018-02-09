@@ -11,6 +11,17 @@ Array [
 ]
 `;
 
+exports[`should dispatch action to change watching state 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "newWatching": false,
+    },
+    "type": "WATCH_CHANGE",
+  },
+]
+`;
+
 exports[`should dispatch action to update repository 1`] = `
 Array [
   Object {

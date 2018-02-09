@@ -21,3 +21,9 @@ it('should handle STAR_CHANGE', () => {
     newStarred: false
   }))).toMatchSnapshot()
 })
+
+it('should handle WATCH_CHANGE', () => {
+  expect(repository(undefined, actions.watchChange({
+    newWatching: false
+  }))).toMatchSnapshot()
+})

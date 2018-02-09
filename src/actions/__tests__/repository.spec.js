@@ -34,3 +34,16 @@ it('should dispatch action to change starred state', () => {
   const actions = store.getActions();
   expect(actions).toMatchSnapshot();
 });
+
+it('should dispatch action to change watching state', () => {
+
+  const initialState = {};
+  const store = mockStore(initialState);
+
+  store.dispatch(act.watchChange({
+    newWatching: false
+  }));
+
+  const actions = store.getActions();
+  expect(actions).toMatchSnapshot();
+});

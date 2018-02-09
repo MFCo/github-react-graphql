@@ -8,6 +8,7 @@ Object {
   "name": "",
   "owner": "",
   "starred": false,
+  "watching": false,
 }
 `;
 
@@ -19,6 +20,19 @@ Object {
   "name": "Jhon-Doe-Repo",
   "owner": "JDoe",
   "starred": false,
+  "watching": undefined,
+}
+`;
+
+exports[`should handle WATCH_CHANGE 1`] = `
+Object {
+  "description": "",
+  "homepage": "",
+  "id": "",
+  "name": "",
+  "owner": "",
+  "starred": false,
+  "watching": false,
 }
 `;
 
@@ -30,5 +44,6 @@ Object {
   "name": "",
   "owner": "",
   "starred": false,
+  "watching": false,
 }
 `;
