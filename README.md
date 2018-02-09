@@ -4,7 +4,7 @@ This project is a PoC, the goal is to simulate GitHub behaviour with a ReactJS f
 
 ## Functionality
 
-This example show your profile (as you can see in the next image) at homepage, and it also let you to looking for another users profile by their username. In the profile you can see standard information, and a grid with all the user repo, they are shown paginated by 6 with a `Load more..` option. In this page you can also see wich repositories are watched/starred by the user logged.
+This website show your GitHub profile (as you can see in the next image) at homepage, and it also let you to look for another users profile by their username. In the profile you can see standard information and a grid with all the selected user repo, repositories are shown paginated by 6 with a `Load more..` option. In this page you can also see wich repositories are watched/starred by the viewer.
 
 ![Homepage](https://i.imgur.com/YbiamBZ.png)
 
