@@ -7,4 +7,5 @@ export default keyMirror({
   UPDATE_DIRECTORY: null,
   UPDATE_REPOSITORY: null,
   STAR_CHANGE: null,
+  WATCH_CHANGE: null
 });

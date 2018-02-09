@@ -27,7 +27,8 @@ function fetchRepository(props) {
           newDescription: data.repository.description,
           newHomepage: data.repository.homepageUrl,
           newId: data.repository.id,
-          newStarred: data.repository.viewerHasStarred
+          newStarred: data.repository.viewerHasStarred,
+          newWatching: data.repository.viewerSubscription === 'SUBSCRIBED'
         })
       }
     )

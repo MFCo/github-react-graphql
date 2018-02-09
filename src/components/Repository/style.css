@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
-  width: 80px;
   cursor: pointer;
   padding: 3px 20px 0px 10px;
+  margin-right: 15px;
 }
 
 .star-btn:focus {
@@ -13,5 +13,9 @@
 
 .star-btn__svg {
   width: 10px;
-  margin-right: 5px;
+  margin-right: 15px;
+}
+
+.wrapper-btn {
+  display: flex;
 }

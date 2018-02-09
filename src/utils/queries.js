@@ -14,6 +14,7 @@ export function repositoryFirstLayer(user, repo) {
       description,
       homepageUrl,
       viewerHasStarred,
+      viewerSubscription,
       id,
       object(expression: "master:") {
         ... on Tree{
@@ -130,6 +131,18 @@ export function removeStar(repo) {
     `
   mutation{
     removeStar(input:{starrableId:"${repo}"}){
+      clientMutationId
+    } 
+    }
+  `
+  )
+}
+
+export function updateWatch(repo, state) {
+  return (
+    `
+  mutation{
+    updateSubscription(input:{subscribableId:"${repo}", state: ${state}}){
       clientMutationId
     } 
     }
